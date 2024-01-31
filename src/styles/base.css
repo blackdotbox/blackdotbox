@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  body {
+    margin: 0;
+  }
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  spline-viewer {
+    display: block;
+  }
+  .socials {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    width: 100%;
+    color: white;
+  }
+  svg {
+    @apply inline-block h-6 w-6;
+  }
+  svg.icon-tabler {
+    @apply inline-block h-6 w-6 scale-110 fill-transparent 
+    stroke-current stroke-2 opacity-90 group-hover:fill-transparent;
+  }
+  svg.icon-tabler {
+    height: 32px;
+    width: 32px;
+    stroke-width: 1.5;
+  }
+  .social-icons {
+    @apply flex-wrap gap-2;
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+  }
+  .link-button {
+    @apply p-2 hover:rotate-6 sm:p-2;
+  }
+}

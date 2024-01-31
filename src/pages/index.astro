@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Socials from "../components/Socials.astro"
+import "@styles/base.css";
+---
+
+<Layout title="black.box">
+	<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.39/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/Ner4xC7pr48cFSvW/scene.splinecode"></spline-viewer>
+<div class="socials-container">
+  <div class="socials">
+	<Socials />
+  </div>
+</div>
+</Layout>
+
